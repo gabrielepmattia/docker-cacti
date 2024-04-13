@@ -14,6 +14,8 @@ RUN mv cacti-1.2.26/* /var/www/html
 RUN rm -rfv /cacti
 WORKDIR /var/www/html
 
+RUN chown -R www-data:www-data /var/www/html
+
 EXPOSE 80
 
 CMD [ "apache2-foreground" ]
