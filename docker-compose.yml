@@ -1,0 +1,5 @@
+services:
+  cacti:
+    image: gabrielepmattia/cacti:latest
+    volumes:
+      - ./config.php:/var/www/html/include/config.php
